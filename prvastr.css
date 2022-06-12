@@ -1,0 +1,158 @@
+
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+  color: gray;
+}
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+  color: gray;
+}
+.slika1 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("slikeprv/cakovec.jpg");
+  min-height: 100%;
+}
+
+.slika2 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("slikeprv/spomenik.jpg");
+  min-height: 60%;
+}
+
+.slika3 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("slikeprv/centar.jpg");
+  min-height: 70%;
+}
+
+.tekst2 {
+  text-align: center;
+  padding: 10px;
+}
+.tekst2:visited {
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  color: gray;
+}
+
+.cakovec1:visited {
+  text-decoration: none;
+  color: gray;
+}
+
+.cakovec1:link {
+  text-decoration: none;
+  color: gray;
+}
+.nikola:link {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.nikola:visited {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.bijelo {
+  background-color: whitesmoke;
+  color: gray;
+}
+.bijelo:visited {
+  background-color: whitesmoke;
+  color: gray;
+  text-decoration: none;
+}
+.sivo {
+  background-color: rgb(30, 46, 47);
+  color: whitesmoke;
+  text-decoration: none;
+}
+.sivo {
+  background-color: rgb(30, 46, 47);
+  color: whitesmoke;
+  text-decoration: none;
+}
+.sivo:link {
+  background-color: rgb(30, 46, 47);
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.tekst {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.tekst4 {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 80%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+
+.cakovec{
+  background-color: black;
+  color: whitesmoke;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.cakovec:hover{
+
+  animation-name: animacijaRotacije;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+}
+@keyframes animacijaRotacije {
+  0% { color: whitesmoke; background-color: black; }
+
+  100% { color: black; background-color: whitesmoke; }
+}
+
+@media (max-width: 992px) {    
+  .tekst4 {
+    top: 40%;
+    flex-direction: column;
+  }
+}
